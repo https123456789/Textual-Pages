@@ -1,0 +1,15 @@
+@html.extend("layout", function(model) {
+	@html.block("title", function(model) {
+		<title>@model.title</title>
+	})
+	@html.block("main", function(model) {
+		<h1 class="border-bottom">@model.pageTitle</h1>
+		<div id="contentDiv">
+			<div class="spinner-border text-primary"></div>
+		</div>
+		<script src="static/js/loadPatches.js"></script>
+		<script>
+			loadPatches();
+		</script>
+	})
+})

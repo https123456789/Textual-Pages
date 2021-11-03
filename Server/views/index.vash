@@ -1,0 +1,12 @@
+@html.extend("layout", function(model) {
+	@html.block("title", function(model) {
+		<title>@model.title</title>
+	})
+	@html.block("main", function(model) {
+		<h1 class="border-bottom">@model.pageTitle</h1>
+		<div class="jumbotron">
+			<h2>Read the documentation.</h2>
+			<a href="/docs" class="btn btn-primary" role="button">Docs</a>
+		</div>
+    })
+})

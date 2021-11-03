@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		@html.block("title")
+		<!-- JQuery -->
+		<script src="/jquery/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand bg-light sticky-top">
+			<!--
+			<ul class="navbar-nav">
+				<li class="navbar-brand">
+					<a href="/" class="nav-item">Home</a>
+				</li>
+			</ul>
+			-->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="/" class="nav-link ">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Developers</a>
+					<div class="dropdown-menu">
+						<a href="/docs" class="dropdown-item">Docs</a>
+						<a href="/patches" class="dropdown-item">Patches</a>
+						<a href="/api" class="dropdown-item">API</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<main class="container">
+			@html.block("main")
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
