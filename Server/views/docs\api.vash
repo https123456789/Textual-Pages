@@ -1,0 +1,27 @@
+@html.extend("docsLayout", function(model) {
+	@html.block("title", function(model) {
+		<title>@model.title</title>
+	})
+	@html.block("main", function(model) {
+		<h1 class="border-bottom mb-4">@model.pageTitle</h1>
+		<div id="main">
+			<div class="spinner-border text-primary"></div>
+		</div>
+		<script>
+			var urlParams = new URLSearchParams(location.search);
+			var page = urlParams.get("page");
+			if (page) {
+				var req = new XMLHttpRequest();
+				req.onload = function() {
+					if (this.status == 200) {
+						document.getElementById("main").innerHTML = this.responseText;
+					}
+				};
+				req.open("GET", "/resreq?path=../res/documentation/api/" + page + "/index.html");
+				req.send();
+			} else {
+				document.getElementById("main").innerHTML = "";
+			}
+		</script>
+    })
+})

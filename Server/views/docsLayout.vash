@@ -1,0 +1,25 @@
+@html.extend("layout", function(model) {
+	@html.block("title", function(model) {
+		<title>@model.title</title>
+	})
+	@html.block("main", function(model) {
+		
+    })
+	@html.block("sidebar", function(model) {
+		<div class="col-md-4">
+			<ul class="nav flex-column">
+				<li class="nav-item mb-2">
+					<a href="/documentation" class="nav-link btn btn-outline-primary btn-block">Docs</a>
+				</li>
+				<li class="nav-item mb-2">
+					<a href="/documentation\api" class="nav-link btn btn-outline-primary btn-block mb-2">API Documentation</a>
+					<ul class="nav mx-4">
+						<li class="nav-item w-100">
+							<a href="/documentation\api?page=patches" class="nav-link btn btn-outline-primary btn-block">Patches</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	})
+})

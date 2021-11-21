@@ -6,7 +6,7 @@
 		<h1 class="border-bottom">@model.pageTitle</h1>
 		<div class="jumbotron">
 			<h2>Read the documentation.</h2>
-			<a href="/docs" class="btn btn-primary" role="button">Docs</a>
+			<a href="/documentation" class="btn btn-primary" role="button">Docs</a>
 		</div>
     })
 })
