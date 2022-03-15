@@ -15,7 +15,7 @@
 					<a href="/documentation\api" class="nav-link btn btn-outline-primary btn-block mb-2">API Documentation</a>
 					<ul class="nav mx-4">
 						<li class="nav-item w-100">
-							<a href="/documentation\api?page=patches" class="nav-link btn btn-outline-primary btn-block">Patches</a>
+							
 						</li>
 					</ul>
 				</li>

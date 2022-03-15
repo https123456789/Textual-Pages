@@ -1,0 +1,10 @@
+@html.extend("layout", function(model) {
+	@html.block("title", function(model) {
+		<title>@model.title</title>
+	})
+	@html.block("main", function(model) {
+		<h1 class="border-bottom">@model.pageTitle</h1>
+		<a href="https://github.com/https123456789/Textual/archive/refs/tags/Beta-1.0.zip" download class="btn btn-primary btn-block">Download Beta 1.0</a>
+		<a href="https://github.com/https123456789/Textual/archive/refs/heads/main.zip" download class="btn btn-primary btn-block">Download Lastest Unstable Version</a>
+    })
+})

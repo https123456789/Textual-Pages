@@ -6,8 +6,7 @@
 		<h1 class="border-bottom mb-4">@model.pageTitle</h1>
 		<h2 class="border-bottom mb-2">Frequently Used Calls</h2>
 		<div class="mb-2">
-			<a href="api?m=get&rt=file&fn=../res/textual/patches/patches.json" class="btn btn-primary btn-block" role="button">api?m=get&rt=file&fn=../res/textual/patches/patches.json</a>
+			<a href="api?m=get&rt=patch&fn=patches.json" class="btn btn-primary btn-block" role="button">api?m=get&rt=file&fn=../res/textual/patches/patches.json</a>
 		</div>
-		<h2 class="mb-4"><a href="documentation/api">Read the documentation</a></h2>
 	})
 })

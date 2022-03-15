@@ -25,9 +25,13 @@
 					<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Developers</a>
 					<div class="dropdown-menu">
 						<a href="/documentation" class="dropdown-item">Docs</a>
+						<a href="/extras" class="dropdown-item">Extras</a>
 						<a href="/patches" class="dropdown-item">Patches</a>
 						<a href="/api" class="dropdown-item">API</a>
 					</div>
+				</li>
+				<li class="nav-item">
+					<a href="/download" class="nav-link">Download</a>
 				</li>
 			</ul>
 		</nav>

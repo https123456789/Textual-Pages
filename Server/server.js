@@ -90,13 +90,23 @@ app.get("/api", function(req, res) {
 			if (fileExists) {
 				var data = fs.readFileSync(fileName, "utf-8");
 			} else {
-				var data = fs.readFileSync("../res/api/nf.json", "utf-8")
+				var data = fs.readFileSync("../res/api/nf.json", "utf-8");
 			}
-			res.writeHead(200, {
-				"Content-type": "application/json"
-			});
-			res.write(data);
-			res.end();
+			if (req.query.pid) {
+				data = JSON.parse(data);
+				var reqD = data["Patches"][req.query.pid];
+				res.writeHead(200, {
+					"Content-type": "application/json"
+				});
+				res.write(JSON.stringify(reqD));
+				res.end();
+			} else {
+				res.writeHead(200, {
+					"Content-type": "application/json"
+				});
+				res.write(data);
+				res.end();
+			}
 		} else {
 			var data = fs.readFileSync("../res/api/nrtd.json", "utf-8");
 			res.writeHead(200, {
@@ -118,6 +128,20 @@ app.get("/patch", function(req, res) {
 	var method = req.query.m;
 	res.send("<p>" + method + "</p>");
 });
+
+app.get("/download", function(req, res) {
+	res.render("download", {
+		title: "Download Textual",
+		pageTitle: "Download Textual"
+	})
+});
+
+app.get("/extras", function(req, res) {
+	res.render("extras", {
+		title: "Extras",
+		pageTitle: "Extras"
+	});
+})
 
 app.use(function(re, res, next) {
 	res.status(404);

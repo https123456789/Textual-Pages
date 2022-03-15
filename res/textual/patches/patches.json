@@ -7,17 +7,27 @@
 			"Status": 0,
 			"Content": {
 				"Type": "Javascript",
-				"Patch": ""
+				"Patch": "localStorage.setItem('GithubAPIData', `{'Contributors':{'https123456789':{'count':29},'LGgameLAB':{'count':1}},'Contributors-Overall': {'Total-Commits': 30}}`);"
 			}
 		},
 		{
 			"Name": "Github API Data Patch 2",
 			"Details": "Adds local storage items that are integral to expiremental features in Textual.",
 			"id": 1,
+			"Status": 0,
+			"Content": {
+				"Type": "Javascript",
+				"Patch": "localStorage.setItem('ForceGithubAPIUsingC', false);"
+			}
+		},
+		{
+			"Name": "Extras Intro Patch",
+			"Details": "Adds local storage items that are used to load all extras.",
+			"id": 2,
 			"Status": 1,
 			"Content": {
 				"Type": "Javascript",
-				"Patch": ""
+				"Patch": "localStorage.setItem('extrasList', `{\"list\":[\"0\", \"1\"]}`);"
 			}
 		}
 	],

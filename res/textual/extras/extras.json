@@ -1,0 +1,18 @@
+{
+	"Extras": [
+		{
+			"Name": "Test",
+			"Description": "Test",
+			"Provider": "Textual",
+			"AuthReqs": {
+				"level": 1,
+				"names": [
+
+				]
+			}
+		}
+	],
+	"Auth Levels": [
+
+	]
+}

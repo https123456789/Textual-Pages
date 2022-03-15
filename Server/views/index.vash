@@ -5,6 +5,10 @@
 	@html.block("main", function(model) {
 		<h1 class="border-bottom">@model.pageTitle</h1>
 		<div class="jumbotron">
+			<h2>Download Textual</h2>
+			<a href="/download" class="btn btn-primary" role="button">Download</a>
+		</div>
+		<div class="jumbotron">
 			<h2>Read the documentation.</h2>
 			<a href="/documentation" class="btn btn-primary" role="button">Docs</a>
 		</div>

@@ -4,5 +4,9 @@
 	})
 	@html.block("main", function(model) {
 		<h1 class="border-bottom mb-4">@model.pageTitle</h1>
+		<div class="jumbotron">
+			<h2>Textual API</h2>
+			<a href="/documentation/api" role="button" class="btn btn-primary">Read It</a>
+		</div>
     })
 })
